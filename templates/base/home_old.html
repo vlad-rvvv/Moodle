@@ -1,0 +1,17 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+<h1>HOME</h1>
+
+{% include 'base/topics_component.html' %}
+
+<div>
+    <a href="{% url 'create-room' %}">Create Room</a>
+    {% include 'base/feed_component.html' %}
+
+    <hr>
+    {% include 'base/activity_component.html' %}    
+</div>
+
+{% endblock content %}
